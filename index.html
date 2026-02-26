@@ -155,63 +155,6 @@
     animation: fadeUp 0.6s ease forwards 0.6s;
   }
 
-  /* Search bar style CTA */
-  .search-cta {
-    display: flex;
-    align-items: center;
-    max-width: 480px;
-    width: 100%;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.8s;
-  }
-
-  .search-cta:focus-within {
-    border-color: var(--amber);
-    box-shadow: 0 0 0 4px var(--amber-soft), 0 8px 30px rgba(0,0,0,0.3);
-  }
-
-  .search-icon {
-    padding: 0 0 0 1.25rem;
-    font-size: 1.1rem;
-    color: var(--text-dim);
-  }
-
-  .search-cta input {
-    flex: 1;
-    padding: 1.1rem 1rem;
-    background: transparent;
-    border: none;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1rem;
-    color: var(--text);
-    outline: none;
-  }
-
-  .search-cta input::placeholder { color: var(--text-dim); }
-
-  .search-cta button {
-    padding: 0.75rem 1.5rem;
-    margin: 0.4rem;
-    background: var(--amber);
-    color: var(--bg);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background 0.2s;
-    white-space: nowrap;
-  }
-
-  .search-cta button:hover { background: #fbbf24; }
 
   .hero-note {
     margin-top: 1rem;
@@ -450,53 +393,6 @@
     z-index: 1;
   }
 
-  .final-email {
-    display: flex;
-    max-width: 440px;
-    margin: 0 auto;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-
-  .final-email:focus-within {
-    border-color: var(--amber);
-    box-shadow: 0 0 0 4px var(--amber-soft);
-  }
-
-  .final-email input {
-    flex: 1;
-    padding: 1rem 1.25rem;
-    background: transparent;
-    border: none;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 0.95rem;
-    color: var(--text);
-    outline: none;
-  }
-
-  .final-email input::placeholder { color: var(--text-dim); }
-
-  .final-email button {
-    padding: 0.7rem 1.5rem;
-    margin: 0.35rem;
-    background: var(--amber);
-    color: var(--bg);
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 700;
-    font-size: 0.85rem;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background 0.2s;
-    white-space: nowrap;
-  }
-
-  .final-email button:hover { background: #fbbf24; }
 
   .final-note {
     font-size: 0.75rem;
@@ -525,39 +421,56 @@
     .steps { grid-template-columns: 1fr; }
     .feature-grid { grid-template-columns: 1fr; }
     .price-cards { grid-template-columns: 1fr; max-width: 280px; margin: 2rem auto 0; }
-    .search-cta { flex-direction: column; padding: 0.4rem; }
-    .search-icon { display: none; }
-    .search-cta input { text-align: center; }
-    .search-cta button { width: 100%; border-radius: 12px; }
-    .final-email { flex-direction: column; padding: 0.35rem; }
-    .final-email button { width: 100%; }
   }
 
-/* EmailOctopus form styling */
-.eo-form-wrapper {
+/* EmailOctopus form styling — dark theme */
+.emailoctopus-form-wrapper {
   max-width: 500px;
   margin: 0 auto;
+  text-align: center;
 }
-.eo-form-wrapper form {
-  display: flex !important;
-  gap: 0.5rem !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
+.emailoctopus-form-row {
+  margin-bottom: 0.5rem;
 }
-.eo-form-wrapper input[type="email"] {
-  flex: 1 !important;
-  min-width: 200px !important;
-  padding: 0.75rem 1rem !important;
-  border-radius: 8px !important;
-  border: 2px solid rgba(255,255,255,0.2) !important;
+.emailoctopus-form-row label {
+  color: var(--text) !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+.emailoctopus-form .form-control {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
   font-size: 1rem !important;
 }
-.eo-form-wrapper button[type="submit"] {
-  padding: 0.75rem 1.5rem !important;
-  border-radius: 8px !important;
+.emailoctopus-form .form-control:focus {
+  border-color: var(--amber) !important;
+  outline: none !important;
+}
+.emailoctopus-form .form-control::placeholder {
+  color: var(--text-dim) !important;
+}
+.emailoctopus-form .btn.btn-primary {
+  background: #FF6B35 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
   font-weight: 700 !important;
   font-size: 1rem !important;
-  cursor: pointer !important;
+  cursor: pointer;
+}
+.emailoctopus-form .btn.btn-primary:hover {
+  background: #e85a2a !important;
+}
+.emailoctopus-success-message {
+  color: var(--text) !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+.emailoctopus-error-message {
+  color: var(--red) !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
 </style>
 </head>

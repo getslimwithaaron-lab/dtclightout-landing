@@ -88,8 +88,8 @@
     top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
+    width: 650px;
+    height: 650px;
     background: radial-gradient(circle, var(--amber-glow) 0%, transparent 70%);
     pointer-events: none;
     animation: glowPulse 3s ease-in-out infinite;
@@ -101,8 +101,8 @@
   }
 
   .engine-icon {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     margin-bottom: 2.5rem;
     position: relative;
     z-index: 1;
@@ -124,7 +124,7 @@
   }
 
   .hero h1 {
-    font-size: clamp(2.6rem, 6.5vw, 4.5rem);
+    font-size: clamp(3rem, 7vw, 5rem);
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -1.5px;
@@ -143,7 +143,7 @@
   }
 
   .hero-sub {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.7;
     color: var(--text-mid);
     max-width: 600px;
@@ -434,8 +434,11 @@
 .emailoctopus-form {
   text-align: center;
 }
+.emailoctopus-form .main-form {
+  text-align: center;
+}
 .emailoctopus-form-row {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 .emailoctopus-form-row label {
@@ -443,12 +446,14 @@
   font-family: 'Plus Jakarta Sans', sans-serif !important;
 }
 .emailoctopus-form .form-control {
+  width: 100% !important;
   background: var(--surface) !important;
   color: var(--text) !important;
   border: 1px solid var(--border) !important;
   border-radius: 12px !important;
   font-family: 'Plus Jakarta Sans', sans-serif !important;
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
+  padding: 0.9rem 1.25rem !important;
 }
 .emailoctopus-form .form-control:focus {
   border-color: var(--amber) !important;
@@ -458,13 +463,15 @@
   color: var(--text-dim) !important;
 }
 .emailoctopus-form .btn.btn-primary {
+  width: 100% !important;
   background: #FF6B35 !important;
   color: #fff !important;
   border: none !important;
   border-radius: 12px !important;
   font-family: 'Plus Jakarta Sans', sans-serif !important;
   font-weight: 700 !important;
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
+  padding: 0.9rem 1.5rem !important;
   cursor: pointer;
 }
 .emailoctopus-form .btn.btn-primary:hover {

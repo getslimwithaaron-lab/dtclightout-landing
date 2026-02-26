@@ -156,10 +156,36 @@
   }
 
 
+  .hero-cta-btn {
+    padding: 1rem 2.5rem;
+    background: var(--amber);
+    color: var(--bg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.8s;
+    box-shadow: 0 4px 20px rgba(245,158,11,0.35);
+  }
+
+  .hero-cta-btn:hover {
+    background: #fbbf24;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(245,158,11,0.5);
+  }
+
   .hero-note {
-    margin-top: 1rem;
-    font-size: 0.9rem;
+    margin-top: 1.25rem;
+    font-size: 1.1rem;
     color: var(--text-dim);
+    font-weight: 300;
+    letter-spacing: 0.3px;
     position: relative;
     z-index: 1;
     opacity: 0;
@@ -283,6 +309,13 @@
     margin: 0 auto;
     padding: 3rem 2rem 5rem;
     text-align: center;
+  }
+
+  .pricing-note {
+    font-size: 1rem;
+    color: var(--text-mid);
+    font-weight: 300;
+    margin-bottom: 0.5rem;
   }
 
   .price-cards {
@@ -508,7 +541,7 @@
   <h1>Your check engine light<br>is <span class="highlight">not a mystery.</span></h1>
   <p class="hero-sub">Type in your code. Get a plain-English explanation of what's wrong, what to check, and whether you can fix it yourself — written by real mechanics.</p>
 
-  <div class="search-cta" style="cursor:pointer; justify-content:center;" onclick="document.querySelector('.final-cta').scrollIntoView({behavior:'smooth'})"><button type="button" style="margin:0.4rem;">Get Early Access</button></div>
+  <button type="button" class="hero-cta-btn" onclick="document.querySelector('.final-cta').scrollIntoView({behavior:'smooth'})">Sign Up to Get Early Access When We Go Live</button>
   <p class="hero-note">Free code lookup included when we launch. No spam.</p>
 </section>
 
@@ -546,7 +579,7 @@
     <div class="feature-card">
       <div class="feature-icon">🚗</div>
       <h3>Specific to YOUR car</h3>
-      <p>A P0420 on a Honda is a different fix than a P0420 on a BMW. We break it down by your year, make, and model.</p>
+      <p>A P0420 on a Honda might be a different fix than a P0420 on a BMW. We break it down by your year, make, and model.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🔧</div>
@@ -564,6 +597,7 @@
 <section class="pricing-peek">
   <div class="section-label">Simple Pricing</div>
   <h2 class="section-title">Pick what works for you.</h2>
+  <p class="pricing-note">No commitment right now — just tell us which tier you'd be most interested in.</p>
   <div class="price-cards">
     <div class="price-card">
       <div class="price-card-name">Pay Per Search</div>

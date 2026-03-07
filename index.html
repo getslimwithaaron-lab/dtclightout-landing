@@ -171,13 +171,13 @@
     z-index: 1;
     opacity: 0;
     animation: fadeUp 0.6s ease forwards 0.8s;
-    box-shadow: 0 4px 20px rgba(245,158,11,0.35);
+    box-shadow: 0 4px 20px rgba(245,158,11,0.35), 0 0 80px rgba(245,158,11,0.18), 0 0 140px rgba(245,158,11,0.08);
   }
 
   .hero-cta-btn:hover {
     background: #fbbf24;
     transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(245,158,11,0.5);
+    box-shadow: 0 6px 30px rgba(245,158,11,0.5), 0 0 100px rgba(245,158,11,0.25), 0 0 160px rgba(245,158,11,0.1);
   }
 
   .hero-note {
@@ -231,7 +231,7 @@
   }
 
   .pain-subhead {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     color: var(--amber);
@@ -241,7 +241,7 @@
   /* Difference Section */
   .difference-section {
     padding: 3rem 2rem 5rem;
-    max-width: 800px;
+    max-width: 880px;
     margin: 0 auto;
   }
 
@@ -261,33 +261,33 @@
   }
 
   .difference-body p {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     line-height: 1.7;
-    color: var(--text-mid);
+    color: var(--text);
     margin-bottom: 1rem;
   }
 
   .difference-body .difference-highlight {
-    color: var(--text);
+    color: #fff;
     font-weight: 600;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     margin-top: 1.5rem;
   }
 
   .difference-includes {
     background: var(--surface);
-    border: 1px solid var(--border);
+    border: 1px solid rgba(245,158,11,0.15);
     border-radius: 16px;
-    padding: 2.5rem;
-    max-width: 650px;
+    padding: 3rem;
+    max-width: 720px;
     margin: 0 auto;
   }
 
   .difference-includes h3 {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
-    color: var(--text);
+    color: #fff;
   }
 
   .includes-list {
@@ -297,10 +297,10 @@
   }
 
   .includes-list li {
-    padding: 0.6rem 0;
-    font-size: 0.95rem;
+    padding: 0.7rem 0;
+    font-size: 1.05rem;
     line-height: 1.6;
-    color: var(--text-mid);
+    color: var(--text);
     border-bottom: 1px solid var(--border);
   }
 
@@ -512,7 +512,7 @@
 
   .price-card-desc {
     font-size: 0.75rem;
-    color: var(--text-dim);
+    color: var(--text-mid);
     line-height: 1.5;
   }
 
@@ -689,14 +689,14 @@
 </section>
 
 <section class="pain-section">
-  <h2 class="section-title">Sound familiar?</h2>
+  <h2 class="section-title">Done guessing yet?</h2>
   <ul class="pain-list">
     <li>You plugged in a code reader. Now you have a code. You have no idea what it actually means.</li>
     <li>You Googled it. Got 47 different answers. Half of them say replace the O2 sensor.</li>
     <li>You replaced the O2 sensor. Light came back on in a week.</li>
     <li>The shop wants $150 just to tell you what you already know.</li>
   </ul>
-  <p class="pain-subhead">There's a better way. And it costs less than that diagnostic fee.</p>
+  <p class="pain-subhead">There's a better way — and it costs less than the $150 the shop charged you to read a code you already had.</p>
 </section>
 
 <section class="difference-section">
@@ -747,23 +747,23 @@
   <div class="feature-grid">
     <div class="feature-card">
       <div class="feature-icon">🔧</div>
+      <h3>Written by a real mechanic</h3>
+      <p>Not a content farm. Not AI slop. Every entry is written and verified by working mechanics with decades of shop experience. We know what we're talking about because we've fixed it.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🚗</div>
       <h3>Shop-level intelligence. Not shop-level prices.</h3>
       <p>The same diagnostic intelligence professionals use — ranked real-world fixes and misdiagnosis traps nobody else documents — at a fraction of what other sites charge, and way less than a shop diagnostic fee.</p>
     </div>
     <div class="feature-card">
-      <div class="feature-icon">🚗</div>
-      <h3>Specific to your car</h3>
-      <p>A P0420 on a 2008 Toyota Camry is a completely different situation than a P0420 on a 2012 Ford F-150. We break it down by year, make, and model.</p>
-    </div>
-    <div class="feature-card">
       <div class="feature-icon">⚠️</div>
       <h3>The misdiagnosis trap</h3>
-      <p>Every entry includes the most common wrong fixes — what they are, why people do them, and why they don't work. This alone is worth the subscription.</p>
+      <p>Every entry tells you what people waste money on first — and exactly why it doesn't fix the problem. Knowing what NOT to do is half the battle.</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">💰</div>
       <h3>Real costs, not guesses</h3>
-      <p>Know what parts and labor actually cost before you walk into a shop. Stop getting charged double because you didn't know any better.</p>
+      <p>Know what parts and labor should actually cost before you walk into a shop. Stop getting charged double because you didn't know any better.</p>
     </div>
   </div>
 </section>
@@ -771,7 +771,7 @@
 <section class="pricing-peek">
   <div class="section-label">Simple Pricing</div>
   <h2 class="section-title">Less than you think.<br>Way less than the alternative.</h2>
-  <p class="pricing-note">One wrong part could cost more than a year of DTCLightOut. Less than one trip to the parts store for a part you probably don't need — diagnose it, don't just be a parts changer using the shotgun method.</p>
+  <p class="pricing-note">Stop shotgunning parts at it. Every wrong part you buy is another brick in the parts store owner's beach house. DTCLightOut costs less than one wrong part. Diagnose first, buy once.</p>
   <div class="price-cards">
     <div class="price-card" onclick="selectPriceCard(this)">
       <div class="price-card-name">Pay Per Search</div>
@@ -802,6 +802,9 @@
   <h2>Stop paying for guesses.<br>Start getting answers.</h2>
   <div class="founding-callout">Founding members get locked-in pricing before we raise it at launch. Spots are limited — we're hand-verifying every code entry before we go live.</div>
   <script async src="https://eocampaign1.com/form/8382aa52-120c-11f1-845c-6b07ecb58af2.js" data-form="8382aa52-120c-11f1-845c-6b07ecb58af2"></script>
+  <script>
+    (function(){var o=new MutationObserver(function(m,obs){var b=document.querySelector('.emailoctopus-form .btn.btn-primary');if(b){b.textContent='Subscribe';obs.disconnect();}});o.observe(document.body,{childList:true,subtree:true});})();
+  </script>
   <p class="final-note">Launching soon. Built by a mechanic. No spam, ever.</p>
 </section>
 
